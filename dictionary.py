@@ -1,4 +1,5 @@
 class Dictionary:
+
     def __init__(self, dict=[], language = ""):
         self._dict = dict
         self._language = language

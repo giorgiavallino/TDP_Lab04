@@ -1,4 +1,5 @@
 class RichWord:
+
     def __init__(self, parola):
         self._parola = parola
         self._corretta = None

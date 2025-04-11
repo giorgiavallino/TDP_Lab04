@@ -10,11 +10,10 @@ class SpellChecker:
 
     def handleSentence(self, txtIn, language, modality):
         txtIn = replaceChars(txtIn.lower())
-
         words = txtIn.split()
         paroleErrate = " - "
-
         match modality:
+
             case "Default":
                 t1 = time.time()
                 parole = self._multiDic.searchWord(words, language)
@@ -55,6 +54,9 @@ class SpellChecker:
               "3. Spagnolo\n" +
               "4. Exit\n" +
               "______________________________\n")
+
+    def handleBtnSpell(self):
+        pass
 
 
 def replaceChars(text):
